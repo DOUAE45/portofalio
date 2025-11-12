@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Douae Zouizine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+    <div class="page-wrapper">
+      <header class="hero" id="accueil">
+        <nav class="nav-bar">
+          <div class="brand">Douae Zouizine</div>
+          <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#projets">Projets</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-avatar">
+            <div class="avatar-glow"></div>
+            <img
+              src="image.png"
+              alt="Portrait de Douae Zouizine"
+            />
+          </div>
+          <div class="hero-text">
+            <h1>Douae Zouizine</h1>
+            <p class="typewriter" data-text="Étudiante en Ingénierie Informatique • Développeuse Web • Passionnée par l’innovation"></p>
+            <div class="hero-actions">
+              <button class="cta" data-scroll-target="#projets">
+                Découvrir mon travail
+                <span class="cta-glare"></span>
+              </button>
+              <a
+                class="cta-secondary"
+                href="assets/CV Français Professionnel Marron Simple.pdf"
+                download
+              >
+                Télécharger mon CV
+                <svg
+                  class="download-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3a1 1 0 0 1 1 1v9.586l2.293-2.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L11 13.586V4a1 1 0 0 1 1-1ZM5 16a1 1 0 0 1 1 1v2h12v-2a1 1 0 1 1 2 0v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 2 0v2h12v-2a1 1 0 0 1 1-1Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section about" id="apropos">
+          <div class="section-header">
+            <h2>À propos</h2>
+            <p>Concevoir des expériences numériques élégantes et intelligentes.</p>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                Étudiante en 4ᵉ année d’ingénierie informatique, je combine mes compétences en
+                développement full-stack et mon sens du design pour concevoir des produits digitaux
+                immersifs. Mon approche est centrée sur l’expérience utilisateur, la performance et
+                l’innovation technologique, avec une forte appétence pour les interfaces modernes,
+                l’IA et les architectures cloud.
+              </p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card" data-skill="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML" />
+                <span>HTML</span>
+              </div>
+              <div class="skill-card" data-skill="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS" />
+                <span>CSS</span>
+              </div>
+              <div class="skill-card" data-skill="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-card" data-skill="React">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+                <span>React</span>
+              </div>
+              <div class="skill-card" data-skill="Node.js">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg" alt="Node.js" />
+                <span>Node.js</span>
+              </div>
+              <div class="skill-card" data-skill="Java">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                <span>Java</span>
+              </div>
+              <div class="skill-card" data-skill="PHP">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                <span>PHP</span>
+              </div>
+              <div class="skill-card" data-skill="C">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+                <span>C</span>
+              </div>
+              <div class="skill-card" data-skill="C++">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                <span>C++</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section projects" id="projets">
+          <div class="section-header">
+            <h2>Projets sélectionnés</h2>
+            <p>Des solutions sur mesure alliant innovation, design et performance.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-info">
+                <h3>Application de gestion IT</h3>
+                <p>Solution sur mesure pour Centrale Danone permettant de gérer les incidents, actifs et tickets en temps réel.</p>
+                <a class="project-link" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer">Voir le projet</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-info">
+                <h3>Application de gestion de paiement</h3>
+                <p>Plateforme sécurisée pour l’école privée Sada Najah offrant suivi des frais, reçus et notifications automatisées.</p>
+                <a class="project-link" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer">Voir le projet</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-info">
+                <h3>Gestion employé</h3>
+                <p>Projet EMSI intégrant gestion RH, planning, performance et reporting via une interface responsive.</p>
+                <a class="project-link" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer">Voir le projet</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-info">
+                <h3>Gestion collecte de déchets numériques</h3>
+                <p>Projet PFA visant à optimiser le recyclage des équipements IT avec suivi logistique et indicateurs environnementaux.</p>
+                <a class="project-link" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer">Voir le projet</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-info">
+                <h3>Application de location de voiture</h3>
+                <p>Solution web/mobile pour la réservation de véhicules avec disponibilité en temps réel, paiement intégré et suivi client.</p>
+                <a class="project-link" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer">Voir le projet</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section certifications" id="certifications">
+          <div class="section-header">
+            <h2>Certifications</h2>
+            <p>Certifications techniques, académiques et professionnelles qui valident mon expertise.</p>
+          </div>
+          <div class="certifications-grid">
+            <article class="cert-card" data-logo="Google">
+              <div class="cert-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" />
+              </div>
+              <div class="cert-body">
+                <h3>Foundation of Digital Marketing and E-commerce</h3>
+                <span class="cert-date">Date&nbsp;: 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: XHN6RXUFZ90Q</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/XHN6RXUFZ90Q"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="IBM">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" />
+              </div>
+              <div class="cert-body">
+                <h3>Apprentissage automatique avec Python</h3>
+                <span class="cert-date">Date&nbsp;: Oct. 2025</span>
+                <span class="cert-id">Identifiant&nbsp;: FR3Z1SJNL7OL</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/FR3Z1SJNL7OL"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Coursera">
+              <div class="cert-logo">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" alt="Coursera" />
+              </div>
+              <div class="cert-body">
+                <h3>Machine Learning with Python (V2)</h3>
+                <span class="cert-date">Date&nbsp;: Oct. 2025</span>
+                <span class="cert-id">Identifiant&nbsp;: —</span>
+              </div>
+              <button class="cert-link">Voir le certificat</button>
+            </article>
+            <article class="cert-card" data-logo="HKUST">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/HKUST_logo.svg" alt="The Hong Kong University of Science and Technology" />
+              </div>
+              <div class="cert-body">
+                <h3>Génie logiciel : conception de logiciels et gestion de projets</h3>
+                <span class="cert-date">Date&nbsp;: Mars 2025</span>
+                <span class="cert-id">Identifiant&nbsp;: ELC4VWZOOBHW</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/ELC4VWZ0OBHW"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Polytechnique">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/8/81/Logo_%C3%89cole_polytechnique.svg" alt="École Polytechnique" />
+              </div>
+              <div class="cert-body">
+                <h3>La recherche documentaire</h3>
+                <span class="cert-date">Date&nbsp;: Mars 2025</span>
+                <span class="cert-id">Identifiant&nbsp;: 7N3GD5POJAYA</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/7N3GD5P0JAYA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="IBM">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" />
+              </div>
+              <div class="cert-body">
+                <h3>Python pour la science des données, l’IA et le développement</h3>
+                <span class="cert-date">Date&nbsp;: Mars 2025</span>
+                <span class="cert-id">Identifiant&nbsp;: CKRIYE85UYD9</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/CKRIYE85UYD9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="EPFL">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/EPFL_logo.svg" alt="EPFL" />
+              </div>
+              <div class="cert-body">
+                <h3>Programmation orientée objet (C++)</h3>
+                <span class="cert-date">Date&nbsp;: Déc. 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: YJ490ATQFOEQ</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/YJ490ATQFOEQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Michigan">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Seal_of_the_University_of_Michigan.svg" alt="University of Michigan" />
+              </div>
+              <div class="cert-body">
+                <h3>MTA : Introduction to Programming Using Python</h3>
+                <span class="cert-date">Date&nbsp;: Déc. 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: FIEBBHKZZ5NO</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/certificate/FIEBBHKZZ5NO"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Michigan">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Seal_of_the_University_of_Michigan.svg" alt="University of Michigan" />
+              </div>
+              <div class="cert-body">
+                <h3>Interactivity with JavaScript</h3>
+                <span class="cert-date">Date&nbsp;: Nov. 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: I7HFTGWUEAHX</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/I7HFTGWUEAHX"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Johns Hopkins">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Johns_Hopkins_University_seal.svg" alt="The Johns Hopkins University" />
+              </div>
+              <div class="cert-body">
+                <h3>The Unix Workbench</h3>
+                <span class="cert-date">Date&nbsp;: Nov. 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: WJZZEY7MWN14</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/certificate/WJZZEY7MWN14"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="Learnvest">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/LearnVest_logo.png" alt="Learnvest" />
+              </div>
+              <div class="cert-body">
+                <h3>Marketing and E-commerce Certificate</h3>
+                <span class="cert-date">Date&nbsp;: 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: —</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.credly.com/badges/c6fbd82a-c268-4c9c-8879-70dd1f8da675/linked_in_profile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+            <article class="cert-card" data-logo="LearnQuest">
+              <div class="cert-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/LearnQuest_logo.png" alt="LearnQuest" />
+              </div>
+              <div class="cert-body">
+                <h3>Oracle SQL Basics</h3>
+                <span class="cert-date">Date&nbsp;: 2024</span>
+                <span class="cert-id">Identifiant&nbsp;: XRM6NMOERNLI</span>
+              </div>
+              <a
+                class="cert-link"
+                href="https://www.coursera.org/account/accomplishments/verify/XRM6NMOERNLI"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Voir le certificat
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact" id="contact">
+          <div class="section-header">
+            <h2>Restons connectés</h2>
+            <p>Pour me contacter.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-icon" href="mailto:douae.zouizine@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2-8 5-8-5h16Zm0 12H4V8l8 5 8-5v10Z"
+                />
+              </svg>
+            </a>
+            <a class="contact-icon" href="https://www.linkedin.com/in/douae-zouizine-2759a7309/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19ZM8.339 10.168H6.168V17.5H8.339V10.168ZM7.275 6.5C6.542 6.5 6 7.042 6 7.759C6 8.459 6.516 9.018 7.233 9.018H7.25C7.999 9.018 8.522 8.459 8.522 7.759C8.505 7.042 7.999 6.5 7.275 6.5ZM18 12.75C18 10.448 16.771 9.5 15.143 9.5C13.928 9.5 13.302 10.168 12.96 10.668H12.923V10.168H10.84V17.5H13.011V13.793C13.011 12.543 13.25 11.343 14.728 11.343C16.18 11.343 16.198 12.668 16.198 13.843V17.5H18V12.75Z"
+                />
+              </svg>
+            </a>
+            <a class="contact-icon" href="https://github.com/DOUAE45?tab=repositories" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.613 2 12.262C2 16.732 4.865 20.473 8.837 21.8C9.337 21.892 9.52 21.582 9.52 21.312C9.52 21.07 9.511 20.276 9.506 19.275C7 19.838 6.348 18.5 6.148 17.806C6.035 17.518 5.52 16.568 5 16.326C4.56 16.12 3.96 15.582 4.99 15.566C5.96 15.55 6.63 16.486 6.84 16.79C7.96 18.53 9.64 18.032 10.32 17.762C10.42 17.098 10.69 16.632 10.98 16.372C8.91 16.112 6.74 15.316 6.74 11.64C6.74 10.552 7.1 9.632 7.71 8.892C7.6 8.632 7.27 7.612 7.82 6.194C7.82 6.194 8.67 5.918 9.52 6.812C10.32 6.57 11.18 6.446 12.04 6.44C12.9 6.446 13.76 6.57 14.56 6.812C15.41 5.918 16.26 6.194 16.26 6.194C16.81 7.612 16.48 8.632 16.37 8.892C16.98 9.632 17.34 10.552 17.34 11.64C17.34 15.332 15.16 16.108 13.09 16.368C13.43 16.672 13.72 17.252 13.72 18.142C13.72 19.416 13.71 20.714 13.71 21.312C13.71 21.582 13.89 21.9 14.41 21.8C18.38 20.47 21.24 16.73 21.24 12.262C21.24 6.613 16.763 2 12 2Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <span>© <span id="current-year"></span> Douae Zouizine · Ingénieure informatique en formation</span>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-1H8A7bdH+lDnuO8XwldZoRKGUt5B0jTlHMD0SWVwqe+4xMBGkcX2Z3+ofh5LoZ9EVF3cGnPpZ5bTi21p4EM1NA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-BwNVqO5DSOwuBb6wMt0gYPbuOkIDiObBABYYaKrPBAwcdK97L4pVG498Fx8MuvRbsKqYnKD39tUS5oX0tHcz3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

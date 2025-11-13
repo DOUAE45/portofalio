@@ -225,22 +225,6 @@ Extra Large : 1200px+   (Large Desktop)
 - **Clamp()** pour le dimensionnement fluide
 - **Container Queries** pour les composants adaptatifs
 
-## 🔧 Développement
-
-### Scripts Disponibles
-```bash
-# Lancement du serveur de développement
-npm run dev
-
-# Build de production
-npm run build
-
-# Tests d'accessibilité
-npm run a11y
-
-# Analyse des performances
-npm run lighthouse
-```
 
 ### Contribution
 1. Fork le projet
@@ -264,12 +248,7 @@ Le portfolio est automatiquement déployé via GitHub Pages à chaque push sur l
 
 **URL de production** : https://douae45.github.io/portofalio/
 
-### Configuration DNS (optionnel)
-```
-# Pour un domaine personnalisé
-CNAME : www.douae-zouizine.com
-A     : 185.199.108.153
-```
+
 
 ## 📄 Licence
 

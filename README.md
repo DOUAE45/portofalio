@@ -117,20 +117,6 @@ start index.html # Windows
 xdg-open index.html # Linux
 ```
 
-### Méthode 2 : Serveur local (recommandé)
-```bash
-# Avec Python 3
-python -m http.server 8000
-
-# Avec Node.js (npx)
-npx http-server
-
-# Avec Live Server (VS Code)
-# Installer l'extension Live Server et clic droit > "Open with Live Server"
-```
-
-Puis accéder à `http://localhost:8000`
-
 ## 📋 Sections du Portfolio
 
 ### 🏠 Accueil

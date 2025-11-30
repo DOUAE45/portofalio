@@ -15,6 +15,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Fix for immediate visibility without animations */
+      .project-info h3 {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #8b5cf6 !important;
+        margin: 0 0 0.5rem 0 !important;
+        font-size: 1.4rem !important;
+        font-weight: 600 !important;
+      }
+      
+      .profile-img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        max-width: 450px !important;
+        max-height: 450px !important;
+        width: 450px !important;
+        height: 450px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        border: 4px solid #8b5cf6 !important;
+      }
+      
+      .profile-picture {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 450px !important;
+        height: 450px !important;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+      }
+      
+      .avatar-placeholder {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 450px !important;
+        height: 450px !important;
+        position: relative !important;
+      }
+      
+      .avatar-fallback {
+        width: 450px !important;
+        height: 450px !important;
+        border-radius: 50% !important;
+      }
+      
+      /* Ensure all animated elements are immediately visible */
+      .stagger-item, .animate-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+      }
+      
+      /* Ensure project cards are properly displayed */
+      .project-card {
+        opacity: 1 !important;
+        transform: none !important;
+        display: block !important;
+        visibility: visible !important;
+      }
+      
+      .project-info {
+        opacity: 1 !important;
+        display: block !important;
+      }
+      
+      /* Make sure the avatar shows properly */
+      .hero-avatar {
+        opacity: 1 !important;
+        transform: none !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+    </style>
   </head>
   <body>
     <a href="#accueil" class="skip-link">Aller au contenu principal</a>
@@ -69,9 +148,9 @@
                 <img 
                   src="image.png" 
                   alt="Douae Zouizine - Photo de profil"
-                  loading="lazy"
                   class="profile-img"
-                  onerror="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';"
+                  onload="console.log('Image loaded successfully'); this.style.display='block';"
+                  onerror="console.log('Image failed to load from: image.png'); this.style.display='none'; this.parentElement.nextElementSibling.style.display='block';"
                 />
               </picture>
               <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="avatar-fallback" style="display: none;">
@@ -743,7 +822,7 @@
             </div>
             <div class="footer-section">
               <h4>Contact</h4>
-              <p>📧 douae.zouizine@example.com</p>
+              <p>📧 douaezouizine@gmail.com</p>
               <p>📱 +212 6 07 10 78 47</p>
               <p>📍 Tanger, Maroc</p>
             </div>
@@ -768,6 +847,49 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      // Force immediate visibility of all elements
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM loaded, fixing elements...');
+        
+        // Make all animated elements immediately visible
+        const animatedElements = document.querySelectorAll('.animate-on-scroll, .stagger-item, .project-card, .project-info h3');
+        animatedElements.forEach(el => {
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          el.style.visibility = 'visible';
+          el.style.display = 'block';
+        });
+        
+        // Force image to show
+        const profileImg = document.querySelector('.profile-img');
+        const profilePicture = document.querySelector('.profile-picture');
+        const avatarFallback = document.querySelector('.avatar-fallback');
+        
+        if (profileImg) {
+          console.log('Profile image found, setting up...');
+          profileImg.style.display = 'block';
+          profileImg.style.visibility = 'visible';
+          profileImg.style.opacity = '1';
+          
+          // Test if image loads
+          const testImg = new Image();
+          testImg.onload = function() {
+            console.log('Image loaded successfully!');
+            profileImg.style.display = 'block';
+            if (avatarFallback) avatarFallback.style.display = 'none';
+          };
+          testImg.onerror = function() {
+            console.log('Image failed to load, showing fallback');
+            if (profileImg) profileImg.style.display = 'none';
+            if (avatarFallback) avatarFallback.style.display = 'block';
+          };
+          testImg.src = 'image.png';
+        }
+        
+        console.log('Element fixes applied');
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
